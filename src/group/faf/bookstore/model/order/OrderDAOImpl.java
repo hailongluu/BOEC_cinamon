@@ -87,7 +87,7 @@ public class OrderDAOImpl implements OrderDAO {
 
         String sql ="INSERT INTO productcart (`cartId`, `productId`, `table`) VALUES;\n";
         StringBuilder sb = new StringBuilder(sql);
-        for (Product product : cart.getProducts()) {
+        for (Product product : cart.getProducts().keySet()) {
             sb.append("(").append(idCard).append(product.getId()).append(",").append(product.getClass().getSimpleName()).append(",").append("),");
         }
         sb.deleteCharAt(sb.length()-1);

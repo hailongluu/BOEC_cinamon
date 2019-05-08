@@ -81,8 +81,29 @@
 </head>
 <body>
 <%
+    int id = Integer.parseInt(request.getParameter("id"));
     BookDAOImpl bookDAO = new BookDAOImpl();
-    Book book = bookDAO.getBookById(Integer.parseInt(request.getParameter("id")));
+    Book book = bookDAO.getBookById(id);
+    String quantityString = request.getParameter("quantity");
+    System.out.println(quantityString);
+    if (quantityString != null) {
+        Cart cart = (Cart) session.getAttribute("cart");
+        if (cart == null) {
+            cart = new Cart(new HashMap<>());
+            session.setAttribute("cart", cart);
+        }
+        Map<Product, Integer> products = cart.getProducts();
+        boolean alreadyExists = false;
+        for (Product p : products.keySet()) {
+            if (p.getId() == id) {
+                alreadyExists = true;
+                products.put(p, products.get(p) + Integer.parseInt(quantityString));
+                break;
+            }
+        }
+        if (!alreadyExists)
+            products.put(book, Integer.parseInt(quantityString));
+    }
 %>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style="width:100%;">
     <div class="container-fluid">
@@ -147,42 +168,33 @@ echo ' --%>
                                 <%--Nguyen X - NXB GIAO DUC--%>
                                 </span>
             <hr>
-            <span style="font-weight:bold;"> Quantity : </span>
-            <select id="quantity" name="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="5">5</option>
-            </select>
+            <%--<select id="quantity" name="quantity" onchange="changeQuantity(this)">--%>
+                <%--<option value="1">1</option>--%>
+                <%--<option value="2">2</option>--%>
+                <%--<option value="3">3</option>--%>
+                <%--<option value="5">5</option>--%>
+            <%--</select>--%>
             <br><br><br>
-            <a id="buyLink" onclick="btnAddClick()" class="btn btn-lg btn-danger"
+            <a id="buyLink" class="btn btn-lg btn-success"
                style="padding:15px;color:white;text-decoration:none;">
-                ADD TO CART for only 50$ until 28th November 2018<br>
-                <span style="text-decoration:line-through;"> 100$</span>
-                | 50% discount
+                YOU HAVE SUCCESSFULLY ADDED THIS ITEM <br>TO YOUR CART
             </a>
-            <input type="hidden" name="quantity_var" id="quantity_var" value="default"/>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a class="btn-lg btn-primary" href="/cart.jsp" style="text-align: center; text-decoration: none; color: white">
+                        Go to cart
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="btn-lg btn-secondary" href="/home" style="text-align: center; text-decoration: none; color: white">
+                        Back to main page
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="container-fluid" id="description">
-    <div class="row">
-        <h2> Description </h2>
-        <p> For Student only </p>
-        <pre style="background:inherit;border:none;">
-   PRODUCT CODE  <%=book.getId()%> <hr>
-   TITLE         <%=book.getName()%> <hr>
-   AUTHOR        <%=book.getAuthor()%> <hr>
-   AVAILABLE     20 <hr>
-   PUBLISHER     <%=book.getPublisher()%><hr>
-   EDITION       6th <hr>
-   LANGUAGE      Vietnamese <hr>
-   PAGES         <%=book.getNumberOfPage()%> <hr>
-                        </pre>
-    </div>
-</div>
-</div>
-
 
 <div class="container-fluid" id="service">
     <div class="row">
@@ -216,23 +228,8 @@ echo ' --%>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script>
-    // $(function () {
-    //     // var link = $('#buyLink').attr('href');
-    //     // $('#buyLink').attr('href', link + 'quantity=' + $('#quantity option:selected').val());
-    //     // $('#quantity').on('change', function () {
-    //     //     $('#buyLink').attr('href', link + 'quantity=' + $('#quantity option:selected').val());
-    //     // });
-    // });
-    function btnAddClick() {
-        var select = document.getElementById("quantity");
-        var url = window.location;
-        var new_url = "http://localhost:8080/detail_added.jsp?id=" + <%=book.getId()%>;
-        if (select.selectedIndex == NaN)
-            new_url += + "&quantity=1";
-        else
-            new_url +="&quantity=" + select.options[select.selectedIndex].value;
-        window.location = new_url;
-    }
+
+
 
 </script>
 </body>

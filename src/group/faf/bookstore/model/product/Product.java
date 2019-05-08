@@ -3,6 +3,7 @@ package group.faf.bookstore.model.product;
 public class Product {
     private int id;
     private String name;
+    private String imageLink;
     private Long quantity;
     private Float price;
 
@@ -37,4 +38,8 @@ public class Product {
     public void setPrice(Float price) {
         this.price = price;
     }
+
+    public String getImageLink() { return imageLink;}
+
+    public void setImageLink(String imageLink) { this.imageLink = imageLink;}
 }
