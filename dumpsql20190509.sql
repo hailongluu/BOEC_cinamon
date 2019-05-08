@@ -286,6 +286,7 @@ CREATE TABLE `clother` (
 
 LOCK TABLES `clother` WRITE;
 /*!40000 ALTER TABLE `clother` DISABLE KEYS */;
+INSERT INTO `clother` VALUES (1,'RED DITSY FLORAL PRINT FRILL DETAIL SHIFT DRE','360000','Louis Vuitton','Large','https://cdn-img.prettylittlething.com/6/2/1/7'),(2,'EMERALD GREEN RUCHED FRONT RUCHED ARM BARDOT ','420000','Dior','Medium','https://cdn-img.prettylittlething.com/b/f/1/b'),(3,'DUSTY PINK SWEETHEART BANDEAU CROP TOP','200000','Versace','Small','https://cdn-img.prettylittlething.com/b/2/f/a');
 /*!40000 ALTER TABLE `clother` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -457,6 +458,7 @@ CREATE TABLE `electronic` (
 
 LOCK TABLES `electronic` WRITE;
 /*!40000 ALTER TABLE `electronic` DISABLE KEYS */;
+INSERT INTO `electronic` VALUES (1,'Laptop Asus ROG Strix Scar II','38.990.000','Asus','16GB','15.6 inch','Intel Core I7 8750H','1TB','https://xgear.vn/wp-content/uploads/2018/07/G'),(2,'Laptop Gaming MSI GT83','111.100.000','MSI','32GB','18.4 inch','Intel Core i7 8850H','1TB','https://xgear.vn/wp-content/uploads/2018/05/G');
 /*!40000 ALTER TABLE `electronic` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -868,4 +870,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-09  1:39:19
+-- Dump completed on 2019-05-09  1:44:01
