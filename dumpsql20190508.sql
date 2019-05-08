@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `account` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Username` varchar(255) DEFAULT NULL,
@@ -46,7 +46,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `address`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `address` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Street` varchar(255) DEFAULT NULL,
@@ -74,7 +74,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `bank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `bank` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `PaymentMethod3Id` int(10) NOT NULL,
@@ -102,7 +102,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `bankpayment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `bankpayment` (
   `Id` int(10) NOT NULL,
   `Bank` int(10) DEFAULT NULL,
@@ -130,7 +130,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `bill`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `bill` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `TotalPrice` double NOT NULL,
@@ -161,7 +161,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `book`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `book` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Title` varchar(255) DEFAULT NULL,
@@ -192,7 +192,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `cart`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `cart` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `customerId` int(11) DEFAULT NULL,
@@ -218,7 +218,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `category`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `category` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
@@ -243,7 +243,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `city`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `city` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Zipcode` varchar(255) DEFAULT NULL,
@@ -269,7 +269,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `codpayment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `codpayment` (
   `Id` int(10) NOT NULL,
   `Fee` float NOT NULL,
@@ -294,7 +294,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `country`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `country` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
@@ -320,7 +320,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `creditcardpayment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `creditcardpayment` (
   `Id` int(10) NOT NULL,
   `CardNo` varchar(255) DEFAULT NULL,
@@ -348,7 +348,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `customer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `customer` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `AddressId` int(10) NOT NULL,
@@ -380,7 +380,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `district`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `district` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Name` varchar(125) DEFAULT NULL,
@@ -407,7 +407,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `fullname`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `fullname` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `FirstName` varchar(255) DEFAULT NULL,
@@ -433,7 +433,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `manager`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `manager` (
   `Id` int(10) NOT NULL,
   `StaffId` int(10) NOT NULL,
@@ -457,7 +457,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `order`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `order` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `Status` varchar(45) DEFAULT NULL,
@@ -490,7 +490,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `orderstatus`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `orderstatus` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Status` varchar(255) DEFAULT NULL,
@@ -516,7 +516,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `paymentmethod`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `paymentmethod` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Discriminator` int(11) NOT NULL,
@@ -539,7 +539,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `premium`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `premium` (
   `DailyGift` int(10) DEFAULT NULL,
   `MonthlyGift` int(10) DEFAULT NULL,
@@ -567,14 +567,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `productcart`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `productcart` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cartId` int(11) DEFAULT NULL,
   `productId` int(11) DEFAULT NULL,
   `table` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -592,7 +592,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `publisher`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `publisher` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
@@ -620,7 +620,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `regular`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `regular` (
   `Id` int(10) NOT NULL,
   `DailyGift` int(10) DEFAULT NULL,
@@ -648,7 +648,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `review`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `review` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Rating` int(10) NOT NULL,
@@ -677,7 +677,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `seller`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `seller` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `StaffId` int(10) NOT NULL,
@@ -702,7 +702,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `shipper`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `shipper` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Vehicle` varchar(255) DEFAULT NULL,
@@ -728,7 +728,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `shippinginvoice`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `shippinginvoice` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `ExpectedDeliveryTime` time DEFAULT NULL,
@@ -757,7 +757,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `shippingstatus`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `shippingstatus` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Status` varchar(255) DEFAULT NULL,
@@ -783,7 +783,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `staff`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `staff` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `AccountId` int(10) NOT NULL,
@@ -810,7 +810,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `stocker`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `stocker` (
   `Id` int(10) NOT NULL,
   `StaffId` int(10) NOT NULL,
@@ -834,7 +834,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `type`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `type` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `CashBack` float NOT NULL,
@@ -859,7 +859,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `ward`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+ SET character_set_client = utf8 ;
 CREATE TABLE `ward` (
   `Id` int(10) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
