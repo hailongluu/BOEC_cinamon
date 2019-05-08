@@ -1,3 +1,9 @@
+<%@ page import="group.faf.bookstore.model.product.book.Book" %>
+<%@ page import="group.faf.bookstore.model.product.Product" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
+<%@ page import="group.faf.bookstore.model.product.book.BookDAOImpl" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,6 +91,11 @@
     </style>
 </head>
 <body>
+<%
+    List<Product> listProducts = new ArrayList<>();
+    BookDAOImpl bookDAO = new BookDAOImpl();
+    listProducts.addAll(bookDAO.getListBook());
+%>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style="width:100%">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -275,56 +286,21 @@
 
 <div class="container-fluid text-center" id="new">
     <div class="row">
-
+        <c:forEach var="index" begin="0" end="3">
+            <%Product book = listProducts.get((Integer) pageContext.getAttribute("index"));%>
             <div class="col-sm-6 col-md-3 col-lg-3">
-                <a href="detail.jsp?id=${book1.id}">
+                <a href="detail.jsp?id=<%=book.getId()%>">
                     <div class="book-block">
                         <div class="tag">New</div>
                         <div class="tag-side"><img src="img/tag.png"></div>
-                        <img class="block-center img-responsive" src=${book1.imageLink} style="width:200px; height=:200px">
+                        <img class="block-center img-responsive" src=<%=book.getImageLink()%> style="width:200px; height=:200px">
                         <hr>
-                            ${book1.name} <br>
-                            ${book1.price} VND
+                            <%=book.getName()%> <br>
+                            <%=book.getPrice()%> VND
                     </div>
                 </a>
             </div>
-
-        <div class="col-sm-6 col-md-3 col-lg-3">
-            <a href="detail.jsp?id=${book2.id}">
-                <div class="book-block">
-                    <div class="tag">New</div>
-                    <div class="tag-side"><img src="img/tag.png"></div>
-                    <img class="block-center img-responsive" src=${book2.imageLink} style="width:200px; height=:200px">
-                    <hr>
-                    ${book2.name} <br>
-                    ${book2.price} VND
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-            <a href="detail.jsp?id=${book3.id}">
-                <div class="book-block">
-                    <div class="tag">New</div>
-                    <div class="tag-side"><img src="img/tag.png"></div>
-                    <img class="block-center img-responsive" src=${book3.imageLink} style="width:200px; height=:200px">
-                    <hr>
-                    ${book3.name} <br>
-                    ${book3.price} VND
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-            <a href="detail.jsp?id=${book4.id}">
-                <div class="book-block">
-                    <div class="tag">New</div>
-                    <div class="tag-side"><img src="img/tag.png"></div>
-                    <img class="block-center img-responsive" src=${book4.imageLink} style="width:200px; height=:200px">
-                    <hr>
-                    ${book4.name} <br>
-                    ${book4.price} VND
-                </div>
-            </a>
-        </div>
+        </c:forEach>
     </div>
 </div>
 
@@ -382,4 +358,4 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 </body>
-</html>
+</html>	

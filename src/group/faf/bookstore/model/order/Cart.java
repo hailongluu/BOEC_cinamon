@@ -14,27 +14,16 @@ public class Cart {
 	private float totalPrice;
 	private int customerId;
 	private String customerName;
-
-	public Cart(int id, List<Product> product, float totalPrice ) {
+	public Cart(int id, Map<Product, Integer> products , Customer customer) {
 		this.id = id;
 		this.products = products;
-		this.totalPrice = totalPrice;
-	}
-
-	public Cart(int id, Map<Product,Integer> product, float totalPrice , Customer customer) {
-		this.id = id;
-		this.products = products;
-		this.totalPrice = totalPrice;
+		this.totalPrice = getTotalPrice();
 		this.customerId = customer.getId();
 		this.customerName = customer.getFullName().getFullName();
 	}
 
-	public int getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
+	public Cart(Map<Product, Integer> products) {
+		this.products = products;
 	}
 
 	public String getCustomerName() {
@@ -43,6 +32,14 @@ public class Cart {
 
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
 
 	public int getId() {
@@ -67,15 +64,14 @@ public class Cart {
 
 	public float getTotalPrice() {
 		float total=0;
-		for (Map.Entry<Product, Integer> productIntegerEntry : products.entrySet()) {
-			total+=productIntegerEntry.getKey().getPrice()*productIntegerEntry.getValue();
-
+		for (Product product : products.keySet()) {
+			total+=product.getPrice() * products.get(product);
 		}
 		this.totalPrice = total;
 		return totalPrice;
 	}
 	public void add(Product product, int quantity){
-		this.products.put(product,quantity);
+		this.products.put(product, quantity);
 	}
 
 }
