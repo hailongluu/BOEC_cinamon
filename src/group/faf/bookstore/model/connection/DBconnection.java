@@ -17,7 +17,7 @@ public class DBconnection {
         if(connect == null){
             hasDriver();
             this.connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/oebc?" +
-                    "user=root&password=");
+                    "user=root&password=111111");
         }
         return connect;
     }
