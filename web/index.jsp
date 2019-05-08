@@ -275,21 +275,19 @@
 
 <div class="container-fluid text-center" id="new">
     <div class="row">
-        <c:forEach var="book" items="${books}">
 
             <div class="col-sm-6 col-md-3 col-lg-3">
-                <a href="detail.jsp?id=${book.id}">
+                <a href="detail.jsp?id=${book1.id}">
                     <div class="book-block">
                         <div class="tag">New</div>
                         <div class="tag-side"><img src="img/tag.png"></div>
-                        <img class="block-center img-responsive" src=${book.imageLink} style="width:200px; height=:200px">
+                        <img class="block-center img-responsive" src=${book1.imageLink} style="width:200px; height=:200px">
                         <hr>
-                            ${book.name} <br>
-                            ${book.price} VND
+                            ${book1.name} <br>
+                            ${book1.price} VND
                     </div>
                 </a>
             </div>
-        </c:forEach>
 
         <div class="col-sm-6 col-md-3 col-lg-3">
             <a href="detail.jsp?id=${book2.id}">
