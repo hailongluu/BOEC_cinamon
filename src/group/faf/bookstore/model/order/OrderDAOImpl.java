@@ -13,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
+import java.util.Map;
 
 public class OrderDAOImpl implements OrderDAO {
 
@@ -72,24 +73,28 @@ public class OrderDAOImpl implements OrderDAO {
         }
         return 0;
     }
-    private void addCart(Cart cart,int orderId) throws SQLException {
-        String sql2 = "INSERT INTO cart (`customerId`, `customerName`) VALUES (?, ?);\n";
-        PreparedStatement preCart = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
-        preCart.setInt(1,cart.getCustomerId());
-        preCart.setString(2,cart.getCustomerName());
-        preCart.executeUpdate();
-        ResultSet rs = preCart.getGeneratedKeys();
-        int idCard=0;
-        while (rs.next()){
-            idCard = rs.getInt(1);
-        };
+         private void addCart(Cart cart,int orderId) throws SQLException {
+            String sql2 = "INSERT INTO cart (`customerId`, `customerName`) VALUES (?, ?);\n";
+            PreparedStatement preCart = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
+            preCart.setInt(1,cart.getCustomerId());
+            preCart.setString(2,cart.getCustomerName());
+            preCart.executeUpdate();
+            ResultSet rs = preCart.getGeneratedKeys();
+            int idCard=0;
+            while (rs.next()){
+                idCard = rs.getInt(1);
+            };
 
 
-        String sql ="INSERT INTO productcart (`cartId`, `productId`, `table`) VALUES;\n";
+            String sql ="INSERT INTO productcart (`cartId`, `productId`, `table`, `quantity`) VALUES;\n";
         StringBuilder sb = new StringBuilder(sql);
-        for (Product product : cart.getProducts()) {
-            sb.append("(").append(idCard).append(product.getId()).append(",").append(product.getClass().getSimpleName()).append(",").append("),");
+        for (Map.Entry<Product, Integer> productIntegerEntry : cart.getProducts().entrySet()) {
+            sb.append("(").append(idCard).append(",").append(productIntegerEntry.getKey().getId()).append(",").append(productIntegerEntry.getKey().getClass().getSimpleName()).append(",").append(productIntegerEntry.getValue()).append("),");
+
         }
+//        for (Product product : cart.getProducts()) {
+//            sb.append("(").append(idCard).append(product.getId()).append(",").append(product.getClass().getSimpleName()).append(",").append("),");
+//        }
         sb.deleteCharAt(sb.length()-1);
 
         PreparedStatement pre =connection.prepareStatement(sb.toString());

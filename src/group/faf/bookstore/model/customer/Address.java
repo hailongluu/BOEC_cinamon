@@ -1,24 +1,19 @@
 package group.faf.bookstore.model.customer;
 
-import group.faf.bookstore.model.customer.person.City;
-import group.faf.bookstore.model.customer.person.Country;
-import group.faf.bookstore.model.customer.person.District;
-import group.faf.bookstore.model.customer.person.Ward;
-
 public class Address {
 	private int id;
 	private String street;
 	private String number;
-	public Country country;
-	public City city;
-	public District district;
-	public Ward ward;
+	public String country;
+	public String city;
+	public String district;
+	public String ward;
 
 	public Address(String street) {
 		this.street = street;
 	}
 
-	public Address(int id, String street, String number, Country country, City city, District district, Ward ward) {
+	public Address(int id, String street, String number, String country, String city, String district, String ward) {
 		this.id = id;
 		this.street = street;
 		this.number = number;
@@ -40,19 +35,19 @@ public class Address {
 		return number;
 	}
 
-	public Country getCountry() {
+	public String getCountry() {
 		return country;
 	}
 
-	public City getCity() {
+	public String getCity() {
 		return city;
 	}
 
-	public District getDistrict() {
+	public String getDistrict() {
 		return district;
 	}
 
-	public Ward getWard() {
+	public String getWard() {
 		return ward;
 	}
 

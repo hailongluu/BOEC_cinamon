@@ -12,13 +12,38 @@ public class Cart {
 	private int id;
 	private Map<Product, Integer> products;
 	private float totalPrice;
+	private int customerId;
+	private String customerName;
+
 	public Cart(int id, List<Product> product, float totalPrice ) {
 		this.id = id;
 		this.products = products;
 		this.totalPrice = totalPrice;
 	}
 
+	public Cart(int id, Map<Product,Integer> product, float totalPrice , Customer customer) {
+		this.id = id;
+		this.products = products;
+		this.totalPrice = totalPrice;
+		this.customerId = customer.getId();
+		this.customerName = customer.getFullName().getFullName();
+	}
 
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
 
 	public int getId() {
 		return id;
