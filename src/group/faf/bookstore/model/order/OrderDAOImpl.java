@@ -73,7 +73,7 @@ public class OrderDAOImpl implements OrderDAO {
         }
         return 0;
     }
-         private void addCart(Cart cart,int orderId) throws SQLException {
+         private void addCart(Cart   cart,int orderId) throws SQLException {
             String sql2 = "INSERT INTO cart (`customerId`, `customerName`) VALUES (?, ?);\n";
             PreparedStatement preCart = connection.prepareStatement(sql2,Statement.RETURN_GENERATED_KEYS);
             preCart.setInt(1,cart.getCustomerId());

@@ -7,58 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43497c4d-113a-4293-a60a-1e1e8b433f56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/group/faf/bookstore/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/payment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/controller/AddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/controller/AddCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/Customer$CustomerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/Customer$CustomerBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/CustomerDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/TestCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/TestCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/District.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/FullName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/customer/person/Ward.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Bill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/OrderDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/order/OrderDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/shipping/ShippingInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/shipping/ShippingInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/shipping/ShippingStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/WEB-INF/classes/group/faf/bookstore/model/shipping/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore2_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/controller/AddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/controller/AddCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/Customer$CustomerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/Customer$CustomerBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/CustomerDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/TestCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/TestCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/District.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/FullName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/customer/person/Ward.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Bill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/OrderDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/order/OrderDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/shipping/ShippingInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/shipping/ShippingInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/shipping/ShippingStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore2/group/faf/bookstore/model/shipping/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/faf/bookstore/controller/AddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/faf/bookstore/controller/AddCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/faf/bookstore/model/customer/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/faf/bookstore/model/customer/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/faf/bookstore/model/order/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/faf/bookstore/model/order/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/group/faf/bookstore/model/order/OrderDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/faf/bookstore/model/order/OrderDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,18 +40,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/controller/HomePageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -108,15 +47,6 @@
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -130,11 +60,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/order/OrderDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bookstore2.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/connection/DBconnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -153,33 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/controller/AddCartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -232,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/Category.java" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/Book.java" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/product/Product.java" />
-        <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/order/state/OrderState.java" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/order/state/ConfimState.java" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/order/state/PaidState.java" />
@@ -269,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/controller/PaymentController.java" />
         <option value="$PROJECT_DIR$/web/payment.jsp" />
         <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/order/OrderDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -308,11 +262,6 @@
             <path>
               <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
               <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,13 +269,6 @@
               <item name="BOEC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
@@ -341,31 +283,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bookstore" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="customer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="shipping" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
@@ -374,18 +292,7 @@
             </path>
             <path>
               <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BOEC" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="BOEC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 9.0.12" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -398,7 +305,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557328509875" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557337022776" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -602,7 +509,7 @@
       <workItem from="1557189046174" duration="24000" />
       <workItem from="1557199240642" duration="4000" />
       <workItem from="1557199315859" duration="315000" />
-      <workItem from="1557220059544" duration="31189000" />
+      <workItem from="1557220059544" duration="38704000" />
     </task>
     <task id="LOCAL-00001" summary="sql dump unicode">
       <created>1557303978336</created>
@@ -632,27 +539,33 @@
       <option name="project" value="LOCAL" />
       <updated>1557315063643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update cart">
+      <created>1557328884748</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557328884749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69228000" />
+    <option name="totallyTimeSpent" value="76743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80421054" visible="true" weight="0.21006711" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8044515" visible="true" weight="0.21006711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.19578947" side_tool="true" visible="true" weight="0.21006711" />
+      <window_info id="Web" order="7" sideWeight="0.19554849" side_tool="true" visible="true" weight="0.21006711" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3632708" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15683647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33646113" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -735,20 +648,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/order/state/DeliveryState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/order/BillDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/clother/ClotherSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -760,13 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -871,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -892,16 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1173,8 +1045,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/order/OrderDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/connection/DBconnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookstore2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/group/faf/bookstore/model/product/book/BookDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,7 +1145,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|bookstore2</last-edited>
+          <last-edited>bookstore2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

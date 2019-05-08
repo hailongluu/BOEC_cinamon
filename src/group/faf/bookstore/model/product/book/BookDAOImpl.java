@@ -30,7 +30,7 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public void addBook(Book book) {
         try {
-            String sql = "INSERT INTO book ( `Title`, `PublishDate`, `Price`, `NumberOfPages`, `Category`, `Author`, `Publisher`) VALUES ( ?, ?, ?, ?, ?, ?, ?);\n";
+            String sql = "INSERT INTO book ( `name`, `publishDate`, `price`, `numberOfPages`, `category`, `author`, `publisher`) VALUES ( ?, ?, ?, ?, ?, ?, ?);\n";
             PreparedStatement pre = connection.prepareStatement(sql);
             pre.setString(1, book.getName());
             pre.setString(2, TimeConvert.convertToString(book.getPublishDate()));
@@ -115,7 +115,7 @@ public class BookDAOImpl implements BookDAO {
     public List<Book> getListBookByName(String name){
         ArrayList<Book> listBook = new ArrayList<>();
         try {
-            String sql = "SELECT * FROM book WHERE Title like ?";
+            String sql = "SELECT * FROM book WHERE name like ?";
             PreparedStatement pre = connection.prepareStatement(sql);
             StringBuilder sb = new StringBuilder("%").append(name).append("%");
             pre.setString(1,sb.toString());
