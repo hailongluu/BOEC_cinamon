@@ -10,7 +10,6 @@ public class ShippingInvoice {
 	private Date expectedDeliveryTime;
 	private Date createdTime;
 	public Shipper shipper;
-	public ShippingStatus shippingStatus;
 	public Bill bill;
 
 	public void updateShippingStatus(Object string) {

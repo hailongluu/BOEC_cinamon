@@ -1,8 +1,6 @@
 package group.faf.bookstore.model.customer;
 
 import group.faf.bookstore.model.connection.DBconnection;
-import group.faf.bookstore.model.customer.person.Address;
-import group.faf.bookstore.model.customer.person.FullName;
 
 
 import java.sql.*;

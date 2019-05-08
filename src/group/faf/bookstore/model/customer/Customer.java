@@ -1,24 +1,71 @@
 package group.faf.bookstore.model.customer;
 
-import group.faf.bookstore.model.customer.person.Account;
-import group.faf.bookstore.model.customer.person.Address;
-import group.faf.bookstore.model.customer.person.FullName;
-import group.faf.bookstore.model.customer.person.Person;
 
-public class Customer extends Person {
+public class Customer {
 	private int id;
 	private int age;
 	private String phone;
+	private Account account;
+	public FullName fullName;
+	public Address address;
 
-	public Customer(Account account, FullName fullName, Address address, int id, int age, String phone) {
-		super(account, fullName, address);
+	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public FullName getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(FullName fullName) {
+		this.fullName = fullName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Customer(Account account, FullName fullName, Address address, int id, int age, String phone) {
+		this.id = id;
+		this.age = age;
+		this.phone = phone;
+		this.account = account;
+		this.fullName = fullName;
+		this.address = address;
+	}
+
 	public Customer(Account account, FullName fullName, Address address, int id) {
-		super(account, fullName, address);
+		this.account = account;
+		this.fullName = fullName;
+		this.address = address;
 		this.id = id;
 	}
 

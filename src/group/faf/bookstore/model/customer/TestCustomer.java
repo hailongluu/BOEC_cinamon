@@ -1,9 +1,5 @@
 package group.faf.bookstore.model.customer;
 
-import group.faf.bookstore.model.customer.person.Account;
-import group.faf.bookstore.model.customer.person.Address;
-import group.faf.bookstore.model.customer.person.FullName;
-
 public class TestCustomer {
     static CustomerDAOImpl customerDAO = new CustomerDAOImpl();
     public static void main(String[] args) {

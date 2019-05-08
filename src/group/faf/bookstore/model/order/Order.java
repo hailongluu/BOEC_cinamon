@@ -22,7 +22,7 @@ public class Order {
 		this.currentState = Confirmed.getInstance();
 	}
 
-	public Order(int id, OrderState currentState, DeliveryState currentDeliveryState, Date createTime, Cart cart, String shippingAddress, PaymentMethod paymentMethod) {
+	public Order(int id, OrderState currentState, DeliveryState currentDeliveryState, Date createTime, Cart cart, String shippingAddress, PaymentMethod paymentMethod, Customer customer) {
 		this.id = id;
 		this.currentState = currentState;
 		this.currentDeliveryState = currentDeliveryState;
@@ -30,11 +30,11 @@ public class Order {
 		this.cart = cart;
 		this.shippingAddress = shippingAddress;
 		this.paymentMethod = paymentMethod;
-		this.idCustomer = cart.getCustomerId();
-		this.customerName = cart.getCustomerName();
+		this.idCustomer = customer.getId();
+		this.customerName = customer.getFullName().getFullName();
 	}
 
-	public Order(int id, Date createTime, Cart cart, String shippingAddress, PaymentMethod paymentMethod) {
+	public Order(int id, Date createTime, Cart cart, String shippingAddress, PaymentMethod paymentMethod,Customer customer) {
 		this.currentDeliveryState = Packaged.getInstance();
 		this.currentState = Confirmed.getInstance();
 		this.id = id;
@@ -42,8 +42,8 @@ public class Order {
 		this.cart = cart;
 		this.shippingAddress = shippingAddress;
 		this.paymentMethod = paymentMethod;
-		this.idCustomer = cart.getCustomerId();
-		this.customerName = cart.getCustomerName();
+		this.idCustomer = customer.getId();
+		this.customerName = customer.getFullName().getFullName();
 	}
 
 	public DeliveryState getCurrentDeliveryState() {

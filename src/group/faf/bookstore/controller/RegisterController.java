@@ -3,8 +3,6 @@ package group.faf.bookstore.controller;
 import group.faf.bookstore.model.customer.Customer;
 import group.faf.bookstore.model.customer.CustomerDAO;
 import group.faf.bookstore.model.customer.CustomerDAOImpl;
-import group.faf.bookstore.model.customer.person.Account;
-import group.faf.bookstore.model.customer.person.FullName;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

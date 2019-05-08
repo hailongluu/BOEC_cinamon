@@ -6,36 +6,19 @@ import group.faf.bookstore.model.product.book.Book;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 public class Cart {
 	private int id;
-	private List<Product> products;
+	private Map<Product, Integer> products;
 	private float totalPrice;
-	private int customerId;
-	private String customerName;
-	public Cart(int id, List<Product> product, float totalPrice , Customer customer) {
+	public Cart(int id, List<Product> product, float totalPrice ) {
 		this.id = id;
 		this.products = products;
 		this.totalPrice = totalPrice;
-		this.customerId = customer.getId();
-		this.customerName = customer.getFullName().getFullName();
 	}
 
-	public String getCustomerName() {
-		return customerName;
-	}
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
-
-	public int getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
-	}
 
 	public int getId() {
 		return id;
@@ -45,7 +28,7 @@ public class Cart {
 		this.id = id;
 	}
 
-	public void setProducts(List<Product> products) {
+	public void setProducts(Map<Product, Integer> products) {
 		this.products = products;
 	}
 
@@ -53,20 +36,21 @@ public class Cart {
 		this.totalPrice = totalPrice;
 	}
 
-	public List<Product> getProducts() {
+	public Map<Product, Integer> getProducts() {
 		return products;
 	}
 
 	public float getTotalPrice() {
 		float total=0;
-		for (Product product : products) {
-			total+=product.getPrice();
+		for (Map.Entry<Product, Integer> productIntegerEntry : products.entrySet()) {
+			total+=productIntegerEntry.getKey().getPrice()*productIntegerEntry.getValue();
+
 		}
 		this.totalPrice = total;
 		return totalPrice;
 	}
-	public void add(Product product){
-		this.products.add(product);
+	public void add(Product product, int quantity){
+		this.products.put(product,quantity);
 	}
 
 }

@@ -1,4 +1,4 @@
-package group.faf.bookstore.model.customer.person;
+package group.faf.bookstore.model.customer;
 
 public class FullName {
 	private String firstName;

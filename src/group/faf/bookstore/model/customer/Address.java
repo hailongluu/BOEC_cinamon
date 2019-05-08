@@ -1,4 +1,9 @@
-package group.faf.bookstore.model.customer.person;
+package group.faf.bookstore.model.customer;
+
+import group.faf.bookstore.model.customer.person.City;
+import group.faf.bookstore.model.customer.person.Country;
+import group.faf.bookstore.model.customer.person.District;
+import group.faf.bookstore.model.customer.person.Ward;
 
 public class Address {
 	private int id;

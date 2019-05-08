@@ -25,6 +25,7 @@ public class HomePageController extends HttpServlet {
         HttpSession session = request.getSession();
 
 //        System.out.println("aaaaaaaa");
+        request.setAttribute("books",books.toArray());
         request.setAttribute("book1",books.get(0));
         request.setAttribute("book2",books.get(1));
         request.setAttribute("book3",books.get(2));
